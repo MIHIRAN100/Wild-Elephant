@@ -1,0 +1,1715 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wild Elephant Ethimale - The Green Lion</title>
+     <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #1c1c1c;
+            color: #e9e9e9;
+        }
+
+        /* Navigation */
+        nav {
+           
+            padding: 20px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+             backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      background: rgba(46, 45, 45, 0.15);
+        }
+
+        .nav-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo-section {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .logo-circle {
+            width: 50px;
+            height: 50px;
+            background: #6BBE45;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .logo-circle svg {
+            width: 30px;
+            height: 30px;
+            fill: white;
+        }
+
+        .logo-text {
+            color: white;
+            font-size: 1.2em;
+            font-weight: 600;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 40px;
+            align-items: center;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 0.95em;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #6BBE45;
+        }
+
+       
+        
+        /* Content Section */
+        .content-section {
+            max-width: 1400px;
+            margin: 80px auto;
+            padding: 0 40px;
+        }
+
+        .section-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+            margin-bottom: 100px;
+        }
+
+        .section-text h2 {
+            font-size: 2.5em;
+            margin-bottom: 25px;
+            color: #c5c6c7;
+            line-height: 1.3;
+        }
+
+        .section-text p {
+            font-size: 1.1em;
+            line-height: 1.8;
+            color: #d9d9d9;
+            margin-bottom: 30px;
+        }
+
+        .section-image1 {
+            width: 100%;
+            height: 500px;
+            background: linear-gradient(135deg, #6BBE45 0%, #4a9835 100%);
+            border-radius: 15px;
+            position: relative;
+            overflow: hidden;
+               background-image: url('/img/d9d9c04d-cc57-451f-8ddb-27381902adc6.jpg');
+      background-size: cover;
+      background-position: center;
+      
+        }
+
+        .section-image img1{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .section-image2 {
+            width: 100%;
+            height: 500px;
+            background: linear-gradient(135deg, #6BBE45 0%, #4a9835 100%);
+            border-radius: 15px;
+            position: relative;
+            overflow: hidden;
+               background-image: url('/img/ddb1b426-da3f-4a5c-a310-c28d886cee3e\ \(1\).jpg');
+      background-size: cover;
+      background-position: center;
+      
+        }
+
+        .section-image2{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+
+
+        /* Feature Cards */
+        .features {
+            background:  #1a1a19;
+            padding: 80px 40px;
+        }
+
+        .features-container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .features h2 {
+            text-align: center;
+            font-size: 2.8em;
+            margin-bottom: 60px;
+            color: #d4d5d5;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .feature-card {
+            background: rgb(38, 38, 38);
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            transition: transform 0.3s, box-shadow 0.3s;
+            color: #b2bec3;
+            
+        }
+
+        .feature-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(47, 180, 29, 0.12);
+        }
+
+        .feature-icon {
+            width: 70px;
+            height: 70px;
+            background: linear-gradient(135deg, #6BBE45 0%, #5aa838 100%);
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2em;
+            margin-bottom: 25px;
+            color: rgb(54, 53, 53);
+        }
+
+        .feature-card h3 {
+            font-size: 1.5em;
+            margin-bottom: 15px;
+            color: #d0d0d0;
+        }
+
+        .feature-card p {
+            color: #868889;
+            line-height: 1.7;
+        }
+
+        /* Gallery Section */
+        .gallery {
+            max-width: 1400px;
+            margin: 80px auto;
+            padding: 0 40px;
+        }
+
+        .gallery h2 {
+            font-size: 2.8em;
+            margin-bottom: 50px;
+            text-align: center;
+            color: #d1d3d3;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .gallery-item {
+            height: 300px;
+            background: linear-gradient(135deg, #6BBE45 0%, #4a9835 100%);
+            border-radius: 15px;
+            overflow: hidden;
+            position: relative;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+        .gallery-item:hover {
+            transform: scale(1.05);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Impact Section */
+        .impact-section {
+            background: #1a1a1a;
+            padding: 80px 40px;
+            color: white;
+        }
+
+        .impact-container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .impact-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .impact-header h2 {
+            font-size: 2.8em;
+            margin-bottom: 20px;
+        }
+
+        .impact-header p {
+            font-size: 1.2em;
+            color: #b2bec3;
+        }
+
+        .impact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+        }
+
+        .impact-card {
+            background: rgba(255,255,255,0.05);
+            padding: 40px;
+            border-radius: 15px;
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .impact-card h3 {
+            font-size: 1.8em;
+            margin-bottom: 15px;
+            color: #6BBE45;
+        }
+
+        .impact-card p {
+            color: #b2bec3;
+            line-height: 1.7;
+            margin-bottom: 20px;
+        }
+
+        .impact-card ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .impact-card li {
+            padding: 10px 0;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+            color: #dfe6e9;
+        }
+
+        .impact-card li:before {
+            content: "✓ ";
+            color: #6BBE45;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        /* CTA Section */
+        .cta-section {
+            background: linear-gradient(135deg, #6BBE45 0%, #4a9835 100%);
+            padding: 100px 40px;
+            text-align: center;
+            color: white;
+        }
+
+        .cta-section h2 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+
+        .cta-section p {
+            font-size: 1.3em;
+            margin-bottom: 40px;
+            opacity: 0.9;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .cta-primary {
+            background: white;
+            color: #6BBE45;
+            padding: 18px 45px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.1em;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-weight: 600;
+        }
+
+        .cta-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+
+        .cta-secondary {
+            background: transparent;
+            color: white;
+            padding: 18px 45px;
+            border: 2px solid white;
+            border-radius: 5px;
+            font-size: 1.1em;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-weight: 600;
+        }
+
+        .cta-secondary:hover {
+            background: white;
+            color: #6BBE45;
+        }
+
+        /* Footer */
+        footer {
+            background: #1a1a1a;
+            color: white;
+            padding: 60px 40px 30px;
+        }
+
+        .footer-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-section h3 {
+            margin-bottom: 20px;
+            color: #6BBE45;
+        }
+
+        .footer-section p, .footer-section a {
+            color: #b2bec3;
+            line-height: 2;
+            text-decoration: none;
+            display: block;
+        }
+
+        .footer-section a:hover {
+            color: #6BBE45;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            color: #b2bec3;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5em;
+            }
+
+            .section-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .nav-links {
+                display: none;
+            }
+
+            .stats-container {
+                grid-template-columns: 1fr;
+            }
+        }
+
+         .img1 {
+      width: 50px;
+      height: 50px;
+      border-radius: 100%; /* Makes the logo round */
+      object-fit: cover;
+    }
+
+
+    .gallery-item1{
+        background-image: url('/img/d5d1dcba-a807-4fbb-95d4-b37a25c0a316.jpg');
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding-top: 80px; 
+    }
+
+      .gallery-item1 {
+            height: 300px;
+           
+            border-radius: 15px;
+            overflow: hidden;
+            position: relative;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+        .gallery-item1:hover {
+            transform: scale(1.05);
+        }
+
+
+         .gallery-item2{
+        background-image: url('/img/dded5fde-f0f5-4704-8dce-e02f230dcf34.jpg');
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding-top: 80px; 
+    }
+
+      .gallery-item2 {
+            height: 300px;
+           
+            border-radius: 15px;
+            overflow: hidden;
+            position: relative;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+        .gallery-item2:hover {
+            transform: scale(1.05);
+        }
+
+         .gallery-item3{
+        background-image: url('/img/d89fa2d4-9914-4a4a-8502-a35c5e2a7e5c.jpg');
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding-top: 80px; 
+    }
+
+      .gallery-item3 {
+            height: 300px;
+           
+            border-radius: 15px;
+            overflow: hidden;
+            position: relative;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+        .gallery-item3:hover {
+            transform: scale(1.05);
+        }
+
+
+.gallery-item4{
+        background-image: url('/img/dbdb0cd7-815c-4727-a19d-7d8d2d389cd0.jpg');
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding-top: 80px; 
+    }
+
+      .gallery-item4 {
+            height: 300px;
+           
+            border-radius: 15px;
+            overflow: hidden;
+            position: relative;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+        .gallery-item4:hover {
+            transform: scale(1.05);
+        }
+
+        .gallery-item5{
+        background-image: url('/img/db79a5a5-f954-4a06-8769-71cfc57720de.jpg');
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding-top: 80px; 
+    }
+
+      .gallery-item5 {
+            height: 300px;
+           
+            border-radius: 15px;
+            overflow: hidden;
+            position: relative;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+        .gallery-item5:hover {
+            transform: scale(1.05);
+        }
+
+
+
+
+.gallery-item6{
+        background-image: url('/img/d0b578d7-694e-46d1-b20c-3dcdea2ee1cf.jpg');
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding-top: 80px; 
+    }
+
+      .gallery-item6 {
+            height: 300px;
+           
+            border-radius: 15px;
+            overflow: hidden;
+            position: relative;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+        .gallery-item6:hover {
+            transform: scale(1.05);
+        }
+
+.gallery-item7{
+        background-image: url('/img/WhatsApp\ Image\ 2025-10-08\ at\ 12.13.06_8636fa84.jpg');
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding-top: 80px; 
+    }
+
+      .gallery-item7 {
+            height: 300px;
+           
+            border-radius: 15px;
+            overflow: hidden;
+            position: relative;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+        .gallery-item7:hover {
+            transform: scale(1.05);
+        }
+
+
+.gallery-item8{
+        background-image: url('/img/WhatsApp\ Image\ 2025-10-08\ at\ 20.19.11_6d8e6f00.jpg');
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding-top: 80px; 
+    }
+
+      .gallery-item8 {
+            height: 300px;
+           
+            border-radius: 15px;
+            overflow: hidden;
+            position: relative;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+        .gallery-item8:hover {
+            transform: scale(1.05);
+        }
+
+
+
+
+
+
+
+ .hero {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .hero-video {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            transform: translate(-50%, -50%);
+            z-index: -1;
+            object-fit: cover;
+            opacity: 0;
+            transition: opacity 2s ease-in-out;
+        }
+
+        .hero-video.active {
+            opacity: 1;
+        }
+
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4));
+            z-index: 0;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            text-align: center;
+            color: white;
+            padding: 20px;
+            max-width: 900px;
+            animation: fadeInUp 1s ease-out;
+        }
+
+        .hero-content h1 {
+            font-size: 4rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+            letter-spacing: 2px;
+        }
+
+        .hero-content p {
+            font-size: 1.5rem;
+            margin-bottom: 40px;
+            text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+            line-height: 1.6;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 15px 40px;
+            font-size: 1.1rem;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #40bd5b 0%, #2c7d4d 100%);
+            color: white;
+            box-shadow: 0 10px 30px rgba(70, 157, 78, 0.4);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(102, 126, 234, 0.6);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: white;
+            border: 2px solid white;
+        }
+
+        .btn-secondary:hover {
+            background: white;
+            color: #333;
+            transform: translateY(-3px);
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .scroll-indicator {
+            position: absolute;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 1;
+            animation: bounce 2s infinite;
+        }
+
+        .scroll-indicator::before {
+            content: '';
+            display: block;
+            width: 30px;
+            height: 50px;
+            border: 2px solid white;
+            border-radius: 20px;
+            position: relative;
+        }
+
+        .scroll-indicator::after {
+            content: '';
+            display: block;
+            width: 6px;
+            height: 6px;
+            background: white;
+            border-radius: 50%;
+            position: absolute;
+            top: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            animation: scrollDot 2s infinite;
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateX(-50%) translateY(0);
+            }
+            40% {
+                transform: translateX(-50%) translateY(-10px);
+            }
+            60% {
+                transform: translateX(-50%) translateY(-5px);
+            }
+        }
+
+        @keyframes scrollDot {
+            0% {
+                opacity: 1;
+                top: 10px;
+            }
+            100% {
+                opacity: 0;
+                top: 30px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .hero-content h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero-content p {
+                font-size: 1.2rem;
+            }
+
+            .btn {
+                padding: 12px 30px;
+                font-size: 1rem;
+            }
+        }
+
+
+.cta-button{
+   
+            padding: 10px 30px;
+            font-size: 1.1rem;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            background-color: #40bd5b;
+            color: #ffffff;
+       
+
+}
+
+
+        .feedback-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 380px;
+            gap: 30px;
+        }
+
+        .video-section {
+            background: #181818;
+            border-radius: 12px;
+            overflow: hidden;
+        }
+
+        .video-wrapper {
+            position: relative;
+            background: #000;
+            aspect-ratio: 16/9;
+        }
+
+        video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .video-controls {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(transparent, rgba(0,0,0,0.8));
+            padding: 60px 20px 20px;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .video-wrapper:hover .video-controls {
+            opacity: 1;
+        }
+
+        .progress-bar {
+            width: 100%;
+            height: 4px;
+            background: rgba(255,255,255,0.3);
+            border-radius: 2px;
+            margin-bottom: 15px;
+            cursor: pointer;
+            position: relative;
+        }
+
+        .progress-filled {
+            height: 100%;
+            background: #1db954;
+            border-radius: 2px;
+            width: 0%;
+            transition: width 0.1s;
+        }
+
+        .controls-bottom {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .controls-left,
+        .controls-right {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .control-btn {
+            background: none;
+            border: none;
+            color: white;
+            cursor: pointer;
+            font-size: 20px;
+            padding: 8px;
+            display: flex;
+            align-items: center;
+            transition: transform 0.2s;
+        }
+
+        .control-btn:hover {
+            transform: scale(1.1);
+        }
+
+        .play-btn {
+            font-size: 28px;
+        }
+
+        .time-display {
+            font-size: 12px;
+            color: #b3b3b3;
+        }
+
+        .volume-control {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .volume-slider {
+            width: 80px;
+            height: 4px;
+            background: rgba(255,255,255,0.3);
+            border-radius: 2px;
+            cursor: pointer;
+            position: relative;
+        }
+
+        .volume-filled {
+            height: 100%;
+            background: white;
+            border-radius: 2px;
+            width: 70%;
+        }
+
+        .video-info {
+            padding: 25px;
+        }
+
+        .video-info h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .video-info p {
+            color: #b3b3b3;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        .playlist-section {
+            background: #181818;
+            border-radius: 12px;
+            padding: 25px;
+            height: fit-content;
+        }
+
+        .playlist-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .playlist-header h3 {
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+        .search-icon {
+            color: #b3b3b3;
+            cursor: pointer;
+            font-size: 18px;
+        }
+
+        .video-item {
+            display: flex;
+            gap: 12px;
+            padding: 10px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background 0.2s;
+            margin-bottom: 8px;
+        }
+
+        .video-item:hover {
+            background: #282828;
+        }
+
+        .video-item.active {
+            background: #282828;
+        }
+
+        .video-thumbnail1 {
+            width: 80px;
+            height: 45px;
+            border-radius: 6px;
+           background-image: url('/img/WhatsApp\ Image\ 2025-10-08\ at\ 19.06.48_5c2c1da8.jpg');
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+            flex-shrink: 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .video-thumbnail2 {
+            width: 80px;
+            height: 45px;
+            border-radius: 6px;
+           background-image: url('/img/d7b5e2ec-a9fa-486f-a2e3-7b2c0ecace67.jpg');
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+            flex-shrink: 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+         .video-thumbnail3 {
+            width: 80px;
+            height: 45px;
+            border-radius: 6px;
+           background-image: url('/img/21-940x500.jpg');
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+            flex-shrink: 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+         .video-thumbnail4 {
+            width: 80px;
+            height: 45px;
+            border-radius: 6px;
+           background-image: url('/img/pict_large.jpg');
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+            flex-shrink: 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+         .video-thumbnail5{
+            width: 80px;
+            height: 45px;
+            border-radius: 6px;
+           background-image: url('/img/SRL201838317_hero.jpg');
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+            flex-shrink: 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .video-thumbnail6{
+            width: 80px;
+            height: 45px;
+            border-radius: 6px;
+           background-image: url('/img/d299cf5b-cb6b-457d-80d8-1c1abd69f840.jpg');
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+            flex-shrink: 0;
+            position: relative;
+            overflow: hidden;
+        }  
+        .video-thumbnail img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .thumbnail-overlay {
+            position: absolute;
+            inset: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(0,0,0,0.3);
+        }
+
+        .play-icon {
+            font-size: 20px;
+        }
+
+        .video-details {
+            flex: 1;
+            min-width: 0;
+        }
+
+        .video-title {
+            font-size: 14px;
+            font-weight: 500;
+            margin-bottom: 4px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .video-meta {
+            font-size: 12px;
+            color: #b3b3b3;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .video-duration {
+            font-size: 12px;
+            color: #b3b3b3;
+            flex-shrink: 0;
+        }
+
+        .equalizer {
+            display: flex;
+            align-items: flex-end;
+            gap: 2px;
+            height: 14px;
+        }
+
+        .equalizer span {
+            width: 3px;
+            background: #1db954;
+            animation: equalize 0.8s ease-in-out infinite;
+        }
+
+        .equalizer span:nth-child(1) { animation-delay: 0s; }
+        .equalizer span:nth-child(2) { animation-delay: 0.2s; }
+        .equalizer span:nth-child(3) { animation-delay: 0.4s; }
+
+        @keyframes equalize {
+            0%, 100% { height: 4px; }
+            50% { height: 14px; }
+        }
+
+        @media (max-width: 1024px) {
+            .feedback-container {
+                grid-template-columns: 1fr;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <div class="logo-section">
+                <div class="logo-circle">
+                     <img class="img1" src="img/Presen.jpg" alt="Logo">
+                        <path d="M50,20 Q30,20 20,35 Q15,42 20,50 Q22,54 26,52 Q28,51 28,48 Q28,45 30,43 Q35,38 42,38 Q45,38 47,40 L47,45 Q47,55 55,60 Q60,63 65,60 L70,55 Q75,50 75,43 Q75,35 70,30 Q65,25 58,25 Q52,25 48,28 Q45,23 50,20 Z M35,60 Q30,65 30,72 Q30,78 35,83 Q40,88 47,88 L53,88 Q60,88 65,83 Q70,78 70,72 Q70,65 65,60 Q60,55 53,55 L47,55 Q40,55 35,60 Z"/>
+                    </svg>
+                </div>
+                <div class="logo-text">Wild Elephant | Ethimale</div>
+            </div>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#impact">Impact</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#volunteer">Get Involved</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+   
+ <section class="hero">
+        <!-- Video Background -->
+        <video class="hero-video active" autoplay muted loop playsinline id="video1">
+            <source src="/img/17842224-uhd_3840_2160_25fps.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <video class="hero-video" muted loop playsinline id="video2">
+            <source src="/img/d2312f33-dab8-4292-a43f-d5ae1cccbd89.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <!-- Overlay -->
+        <div class="hero-overlay"></div>
+
+        <!-- Content -->
+        <div class="hero-content">
+            <h1>Wild Elephant Project</h1>
+            <p>Protecting Sri Lanka's majestic elephants and preserving their natural habitat. Join us in our mission to create harmony between wildlife and communities.</p>
+            <div class="hero-buttons">
+                <button class="btn btn-primary">Support the Project</button>
+                <button class="btn btn-secondary">Learn More</button>
+            </div>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div class="scroll-indicator"></div>
+    </section>
+
+    <script>
+        const video1 = document.getElementById('video1');
+        const video2 = document.getElementById('video2');
+        let currentVideo = 1;
+
+        // Function to switch videos
+        function switchVideo() {
+            if (currentVideo === 1) {
+                video1.classList.remove('active');
+                video2.classList.add('active');
+                video2.play();
+                currentVideo = 2;
+            } else {
+                video2.classList.remove('active');
+                video1.classList.add('active');
+                video1.play();
+                currentVideo = 1;
+            }
+        }
+
+        // Switch videos every 10 seconds
+        setInterval(switchVideo, 10000);
+
+        // Pause videos on mobile to save bandwidth
+        if (window.innerWidth < 768) {
+            video1.pause();
+            video2.pause();
+        }
+
+        // Button interactions
+        document.querySelectorAll('.btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                alert('Button clicked: ' + this.textContent);
+            });
+        });
+    </script>
+    <!-- Stats Section -->
+  
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="features-container">
+            <h2>What We Do</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="bi bi-shield-fill-check"></i></div>
+                    <h3>Elephant Fence</h3>
+                    <p>Join a hands-on conservation effort to build and maintain safe, eco-friendly elephant fences. </p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="bi bi-tree-fill"></i></div>
+                    <h3>Habitat Restoration</h3>
+                    <p>Restoring and expanding natural habitats through reforestation and sustainable land management practices.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="bi bi-people-fill"></i></div>
+                    <h3>Community Engagement</h3>
+                    <p>Working with local communities to develop sustainable livelihoods and reduce human-elephant conflict.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="bi bi-journal-bookmark-fill"></i></div>
+                    <h3>Education Programs</h3>
+                    <p>Teaching the next generation about wildlife conservation and the importance of protecting endangered species.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="bi bi-tv-fill"></i></div>
+                    <h3>Research & Monitoring</h3>
+                    <p>Conducting cutting-edge research to better understand elephant behavior and improve conservation strategies.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="bi bi-backpack-fill fs-2 text-warning"></i></div>
+                    <h3>Pre-School Teaching</h3>
+                    <p>Help young children (ages 3–5) learn through fun and creativity! Volunteers support local teachers with basic English, songs, art, storytelling, and play-based lessons that build confidence and curiosity.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"> <i class="bi bi-flower3"></i></div>
+                    <h3>Elephant Deterrent</h3>
+                    <p>A creative and compassionate wildlife project where volunteers prepare natural orange-based deterrents to help keep elephants safely away from villages and crops without harm.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"> <i class="bi bi-person-hearts fs-2 text-danger"></i></div>
+                    <h3>Women Empowerment</h3>
+                    <p>Volunteers support local women to build confidence, learn new skills, and become financially independent. Activities include teaching English, computer skills, crafts, and health awareness  helping women unlock their potential and strengthen their communities.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery" id="gallery">
+        <h2>Our Work in Action</h2>
+        <div class="gallery-grid">
+            <div class="gallery-item1"></div>
+            <div class="gallery-item2"></div>
+            <div class="gallery-item3"></div>
+            <div class="gallery-item4"></div>
+            <div class="gallery-item5"></div>
+            <div class="gallery-item6"></div>
+            <div class="gallery-item7"></div>
+            <div class="gallery-item8"></div>
+        </div>
+    </section>
+<div class="feedback-container">
+        <!-- Main Video Player -->
+        <div class="video-section">
+            <div class="video-wrapper">
+                <video id="mainVideo">
+                    <source src="img/WhatsApp Video 2025-10-11 at 17.55.01_833eda31.mp4" type="video/mp4">
+                </video>
+                
+                <div class="video-controls">
+                    <div class="progress-bar" id="progressBar">
+                        <div class="progress-filled" id="progressFilled"></div>
+                    </div>
+                    <div class="controls-bottom">
+                        <div class="controls-left">
+                            <button class="control-btn play-btn" id="playBtn">
+                                <i class="bi bi-play-fill"></i>
+                            </button>
+                            <button class="control-btn">
+                                <i class="bi bi-skip-forward-fill"></i>
+                            </button>
+                            <span class="time-display">
+                                <span id="currentTime">0:00</span> / <span id="duration">0:00</span>
+                            </span>
+                        </div>
+                        <div class="controls-right">
+                            <div class="volume-control">
+                                <button class="control-btn" id="muteBtn">
+                                    <i class="bi bi-volume-up-fill"></i>
+                                </button>
+                                <div class="volume-slider" id="volumeSlider">
+                                    <div class="volume-filled" id="volumeFilled"></div>
+                                </div>
+                            </div>
+                            <button class="control-btn" id="fullscreenBtn">
+                                <i class="bi bi-arrows-fullscreen"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="video-info">
+                <h2>Volunteer Impact Stories - Education Program</h2>
+                <p>Watch how our volunteers are making a difference in communities through education and mentorship programs. This feedback session highlights key achievements and testimonials from participants.</p>
+            </div>
+        </div>
+
+        <!-- Playlist -->
+        <div class="playlist-section">
+            <div class="playlist-header">
+                <h3>Now Playing</h3>
+                <i class="bi bi-search search-icon"></i>
+            </div>
+
+            <div class="video-item active">
+                <div class="video-thumbnail1">
+                   
+                    <div class="thumbnail-overlay">
+                        <div class="equalizer">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-details">
+                    <div class="video-title">Education Program Impact</div>
+                    <div class="video-meta">
+                        Volunteer Feedback
+                    </div>
+                </div>
+                <div class="video-duration">3:45</div>
+            </div>
+
+            <div class="video-item">
+                <div class="video-thumbnail2">
+                    
+                    <div class="thumbnail-overlay">
+                        <i class="bi bi-play-fill play-icon"></i>
+                    </div>
+                </div>
+                <div class="video-details">
+                    <div class="video-title">Healthcare Support Success</div>
+                    <div class="video-meta">
+                        Community Stories
+                    </div>
+                </div>
+                <div class="video-duration">4:12</div>
+            </div>
+
+            <div class="video-item">
+                <div class="video-thumbnail3">
+                    
+                    <div class="thumbnail-overlay">
+                        <i class="bi bi-play-fill play-icon"></i>
+                    </div>
+                </div>
+                <div class="video-details">
+                    <div class="video-title">Environmental Projects</div>
+                    <div class="video-meta">
+                        Field Updates
+                    </div>
+                </div>
+                <div class="video-duration">5:30</div>
+            </div>
+
+            <div class="video-item">
+                <div class="video-thumbnail4">
+                    
+                    <div class="thumbnail-overlay">
+                        <i class="bi bi-play-fill play-icon"></i>
+                    </div>
+                </div>
+                <div class="video-details">
+                    <div class="video-title">Youth Empowerment</div>
+                    <div class="video-meta">
+                        Training Sessions
+                    </div>
+                </div>
+                <div class="video-duration">6:05</div>
+            </div>
+
+            <div class="video-item">
+                <div class="video-thumbnail5">
+                   
+                    <div class="thumbnail-overlay">
+                        <i class="bi bi-play-fill play-icon"></i>
+                    </div>
+                </div>
+                <div class="video-details">
+                    <div class="video-title">Community Development</div>
+                    <div class="video-meta">
+                        Project Review
+                    </div>
+                </div>
+                <div class="video-duration">4:50</div>
+            </div>
+
+            <div class="video-item">
+                <div class="video-thumbnail6">
+                  
+                    <div class="thumbnail-overlay">
+                        <i class="bi bi-play-fill play-icon"></i>
+                    </div>
+                </div>
+                <div class="video-details">
+                    <div class="video-title">Disaster Relief Efforts</div>
+                    <div class="video-meta">
+                        Emergency Response
+                    </div>
+                </div>
+                <div class="video-duration">7:20</div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const video = document.getElementById('mainVideo');
+        const playBtn = document.getElementById('playBtn');
+        const progressBar = document.getElementById('progressBar');
+        const progressFilled = document.getElementById('progressFilled');
+        const currentTimeEl = document.getElementById('currentTime');
+        const durationEl = document.getElementById('duration');
+        const muteBtn = document.getElementById('muteBtn');
+        const volumeSlider = document.getElementById('volumeSlider');
+        const volumeFilled = document.getElementById('volumeFilled');
+        const fullscreenBtn = document.getElementById('fullscreenBtn');
+
+        // Play/Pause
+        playBtn.addEventListener('click', () => {
+            if (video.paused) {
+                video.play();
+                playBtn.innerHTML = '<i class="bi bi-pause-fill"></i>';
+            } else {
+                video.pause();
+                playBtn.innerHTML = '<i class="bi bi-play-fill"></i>';
+            }
+        });
+
+        // Update progress
+        video.addEventListener('timeupdate', () => {
+            const percent = (video.currentTime / video.duration) * 100;
+            progressFilled.style.width = percent + '%';
+            currentTimeEl.textContent = formatTime(video.currentTime);
+        });
+
+        // Set duration
+        video.addEventListener('loadedmetadata', () => {
+            durationEl.textContent = formatTime(video.duration);
+        });
+
+        // Seek
+        progressBar.addEventListener('click', (e) => {
+            const rect = progressBar.getBoundingClientRect();
+            const percent = (e.clientX - rect.left) / rect.width;
+            video.currentTime = percent * video.duration;
+        });
+
+        // Mute/Unmute
+        muteBtn.addEventListener('click', () => {
+            video.muted = !video.muted;
+            if (video.muted) {
+                muteBtn.innerHTML = '<i class="bi bi-volume-mute-fill"></i>';
+                volumeFilled.style.width = '0%';
+            } else {
+                muteBtn.innerHTML = '<i class="bi bi-volume-up-fill"></i>';
+                volumeFilled.style.width = (video.volume * 100) + '%';
+            }
+        });
+
+        // Volume
+        volumeSlider.addEventListener('click', (e) => {
+            const rect = volumeSlider.getBoundingClientRect();
+            const percent = (e.clientX - rect.left) / rect.width;
+            video.volume = percent;
+            volumeFilled.style.width = (percent * 100) + '%';
+            video.muted = false;
+            muteBtn.innerHTML = '<i class="bi bi-volume-up-fill"></i>';
+        });
+
+        // Fullscreen
+        fullscreenBtn.addEventListener('click', () => {
+            if (video.requestFullscreen) {
+                video.requestFullscreen();
+            }
+        });
+
+        // Format time
+        function formatTime(seconds) {
+            const mins = Math.floor(seconds / 60);
+            const secs = Math.floor(seconds % 60);
+            return `${mins}:${secs.toString().padStart(2, '0')}`;
+        }
+
+        // Video click to play/pause
+        video.addEventListener('click', () => {
+            playBtn.click();
+        });
+    </script>
+
+    <!-- Impact Section -->
+    <section class="impact-section" id="impact">
+        <div class="impact-container">
+            <div class="impact-header">
+                <h2>Our Impact</h2>
+                <p>Measuring success through tangible results and lasting change</p>
+            </div>
+            <div class="impact-grid">
+                <div class="impact-card">
+                    <h3>Conservation Success</h3>
+                    <p>Our efforts have led to significant improvements in elephant populations and habitat quality.</p>
+                    <ul>
+                        <li>25% increase in local elephant population</li>
+                        <li>500 hectares of habitat restored</li>
+                        <li>Zero poaching incidents in protected areas</li>
+                        <li>80% reduction in human-elephant conflict</li>
+                    </ul>
+                </div>
+                <div class="impact-card">
+                    <h3>Community Benefits</h3>
+                    <p>Creating sustainable solutions that benefit both people and wildlife.</p>
+                    <ul>
+                        <li>200+ families supported with alternative livelihoods</li>
+                        <li>15 schools with conservation education programs</li>
+                        <li>Local employment opportunities created</li>
+                        <li>Eco-tourism revenue shared with communities</li>
+                    </ul>
+                </div>
+                <div class="impact-card">
+                    <h3>Global Recognition</h3>
+                    <p>Our innovative approaches are setting new standards in wildlife conservation.</p>
+                    <ul>
+                        <li>International conservation awards</li>
+                        <li>Partnership with leading research institutions</li>
+                        <li>Model for elephant conservation worldwide</li>
+                        <li>Featured in major conservation publications</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section" id="volunteer">
+        <h2>Join Us in Making a Difference</h2>
+        <p>Your support can help protect elephants and preserve their habitat for generations to come</p>
+        <div class="cta-buttons">
+            <button class="cta-primary">Become a Volunteer</button>
+            <button class="cta-secondary">Make a Donation</button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>About The Green Lion</h3>
+                <p>We are dedicated to wildlife conservation and sustainable development in Sri Lanka and beyond.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <a href="#about">About Us</a>
+                <a href="#impact">Our Impact</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#volunteer">Volunteer</a>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>Email: info@thegreenlion.net</p>
+                <p>Phone: +94 71 611 0347</p>
+                <p>Location: Ethimale, Sri Lanka</p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+                <a href="#">Twitter</a>
+                <a href="#">YouTube</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 The Green Lion - Wild Elephant Ethimale Project. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
